@@ -170,4 +170,4 @@ app.post("/api/send/error", express.json({ type: (e) => true, limit: '3mb'}), as
 
 })
 
-app.listen(4000, () => console.log("Server Running"));
+app.listen(process.env.PORT || 4000, () => console.log("Server Running"));
